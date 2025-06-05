@@ -1,11 +1,7 @@
-input.onButtonPressed(Button.A, function () {
-    Count = 2
-    basic.showNumber(Count)
-})
-input.onGesture(Gesture.Shake, function () {
-    Count += 1
-    basic.showNumber(Count)
-})
-let Count = 0
-Count = 0
-basic.showNumber(Count)
+while (true) {
+    if (input.temperature() >= 40) {
+        basic.showString("Too Hot")
+    } else {
+        basic.showString("cool")
+    }
+}
